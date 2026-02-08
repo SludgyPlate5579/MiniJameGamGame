@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dgenm5nsrfnu1"]
+
+[ext_resource type="Texture2D" uid="uid://bmyy5k1a1ycm8" path="res://images/Speaker.png" id="1_ipj5k"]
+
+[node name="LevelOne" type="Node2D" unique_id=954052002]
+
+[node name="Speaker" type="Sprite2D" parent="." unique_id=1307326928]
+position = Vector2(-3, 1.0001221)
+scale = Vector2(0.4641129, 0.58580387)
+texture = ExtResource("1_ipj5k")

@@ -14,6 +14,12 @@ config/name="Ebb and Flow"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://images/": "yellow"
+}
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
