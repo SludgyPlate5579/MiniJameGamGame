@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmyy5k1a1ycm8"
-path="res://.godot/imported/Speaker.png-3f3cc17b4426e90b1afed9909d534773.ctex"
+uid="uid://t3eogebltgvv"
+path="res://.godot/imported/Sprite sheet.png-268db53ceb5e6a3421cf366e0686e404.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/Speaker.png"
-dest_files=["res://.godot/imported/Speaker.png-3f3cc17b4426e90b1afed9909d534773.ctex"]
+source_file="res://images/Sprite sheet.png"
+dest_files=["res://.godot/imported/Sprite sheet.png-268db53ceb5e6a3421cf366e0686e404.ctex"]
 
 [params]
 

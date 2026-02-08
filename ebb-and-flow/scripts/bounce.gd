@@ -1,7 +1,7 @@
 extends Node
 
 #exported variables
-@export var sprite: Sprite2D = null
+@export var sprite: AnimatedSprite2D = null
 @export var height: float = 1
 @export var width: float = 1
 @export var rotation: float = 0
