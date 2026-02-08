@@ -1,5 +1,10 @@
 [gd_scene format=3 uid="uid://dseddso5fvbmt"]
 
+[ext_resource type="Shape2D" uid="uid://1obevqte2rlu" path="res://resources/new_capsule_shape_2d.tres" id="1_3vyb7"]
+
 [node name="player" type="CharacterBody2D" unique_id=579592363]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1857394290]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=399988398]
+shape = ExtResource("1_3vyb7")

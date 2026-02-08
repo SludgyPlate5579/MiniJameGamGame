@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://ju6jsdph0noi"]
+[gd_scene format=3 uid="uid://cokk6waq5b3uw"]
 
 [ext_resource type="Texture2D" uid="uid://bmyy5k1a1ycm8" path="res://images/Speaker.png" id="1_6jdiy"]
+[ext_resource type="Script" uid="uid://b5dsk8jtovt5e" path="res://scripts/bounce.gd" id="2_e1qhi"]
 
 [node name="Speaker" type="Node2D" unique_id=2043320955]
 scale = Vector2(0.1, 0.1)
@@ -8,3 +9,4 @@ scale = Vector2(0.1, 0.1)
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1058185182]
 scale = Vector2(0.4262097, 0.41191563)
 texture = ExtResource("1_6jdiy")
+script = ExtResource("2_e1qhi")
