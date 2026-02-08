@@ -1,13 +1,58 @@
 [gd_scene format=3 uid="uid://dseddso5fvbmt"]
 
-[ext_resource type="Script" uid="uid://dy1gam1h7x6ob" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="Shape2D" uid="uid://1obevqte2rlu" path="res://resources/new_capsule_shape_2d.tres" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://t3eogebltgvv" path="res://images/Sprite sheet.png" id="2_qhqgy"]
+
+[sub_resource type="GDScript" id="GDScript_g2els"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+@export var gravityCoeff: float = .5
+
+
+func _physics_process(delta: float) -> void:
+	# Add the gravity.
+	if not is_on_floor():
+		velocity += get_gravity() * gravityCoeff * delta
+
+	# Handle jump.
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction := Input.get_axis(\"ui_left\", \"ui_right\")
+	if direction:
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	move_and_slide()
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dqkch"]
+atlas = ExtResource("2_qhqgy")
+region = Rect2(1536, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qlg0r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dqkch")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="player" type="CharacterBody2D" unique_id=579592363]
-script = ExtResource("1_3vyb7")
+script = SubResource("GDScript_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1857394290]
 autoplay = "default"
+sprite_frames = SubResource("SpriteFrames_qlg0r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=399988398]
 shape = ExtResource("2_g2els")
