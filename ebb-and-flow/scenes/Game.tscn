@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bk2gvbana03a2"]
+[gd_scene format=3 uid="uid://0b2qgpi8l1c2"]
 
 [ext_resource type="AudioStream" uid="uid://cvmjwtb0g4djy" path="res://music/Trail-12 1.ogg" id="2_cpr0p"]
 [ext_resource type="PackedScene" uid="uid://cokk6waq5b3uw" path="res://scenes/speaker.tscn" id="2_qbsmt"]

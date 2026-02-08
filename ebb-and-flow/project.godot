@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Ebb and Flow"
-run/main_scene="uid://bk2gvbana03a2"
+run/main_scene="uid://0b2qgpi8l1c2"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
