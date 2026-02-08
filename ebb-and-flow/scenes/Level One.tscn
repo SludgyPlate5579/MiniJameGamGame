@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://dgenm5nsrfnu1"]
+[gd_scene format=3 uid="uid://bk2gvbana03a2"]
 
 [ext_resource type="Texture2D" uid="uid://bmyy5k1a1ycm8" path="res://images/Speaker.png" id="1_ipj5k"]
+[ext_resource type="AudioStream" uid="uid://cvmjwtb0g4djy" path="res://music/Trail-12 1.ogg" id="2_y3bu4"]
 
 [node name="LevelOne" type="Node2D" unique_id=954052002]
 
@@ -8,3 +9,6 @@
 position = Vector2(3305, 1217.9999)
 scale = Vector2(0.4641129, 0.58580387)
 texture = ExtResource("1_ipj5k")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1059389340]
+stream = ExtResource("2_y3bu4")
