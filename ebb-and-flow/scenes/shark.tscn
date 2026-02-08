@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://x30exwykamqp"]
+[gd_scene format=3 uid="uid://dknjxjk5nwcco"]
 
 [ext_resource type="Texture2D" uid="uid://t3eogebltgvv" path="res://images/Sprite sheet.png" id="1_8l5qy"]
 
@@ -42,4 +42,5 @@ animations = [{
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2125436731]
 sprite_frames = SubResource("SpriteFrames_4m6ut")
-frame_progress = 0.13376723
+autoplay = "default"
+frame_progress = 0.6354273
