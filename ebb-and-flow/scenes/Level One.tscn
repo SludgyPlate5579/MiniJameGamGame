@@ -5,6 +5,6 @@
 [node name="LevelOne" type="Node2D" unique_id=954052002]
 
 [node name="Speaker" type="Sprite2D" parent="." unique_id=1307326928]
-position = Vector2(-3, 1.0001221)
+position = Vector2(3305, 1217.9999)
 scale = Vector2(0.4641129, 0.58580387)
 texture = ExtResource("1_ipj5k")
