@@ -11,6 +11,7 @@
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1059389340]
 stream = ExtResource("2_cpr0p")
+volume_db = -5.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=219184981]
 
