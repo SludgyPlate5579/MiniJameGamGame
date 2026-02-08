@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dgenm5nsrfnu1"]
 
-[ext_resource type="Texture2D" uid="uid://bmyy5k1a1ycm8" path="res://images/Speaker.png" id="1_ipj5k"]
+[ext_resource type="Texture2D" path="res://images/Speaker.png" id="1_ipj5k"]
 [ext_resource type="AudioStream" uid="uid://cvmjwtb0g4djy" path="res://music/Trail-12 1.ogg" id="2_y3bu4"]
 
 [node name="LevelOne" type="Node2D" unique_id=954052002]
@@ -12,3 +12,5 @@ texture = ExtResource("1_ipj5k")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1059389340]
 stream = ExtResource("2_y3bu4")
+volume_db = -15.0
+autoplay = true
